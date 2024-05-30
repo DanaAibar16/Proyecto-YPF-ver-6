@@ -490,7 +490,7 @@ footer{
 }
 
 .carta-embalse{
-    background: red;
+    background: withe;
 }
 #nuestros-embalses .carta-embalse{
     background-position: center, center;
@@ -499,10 +499,6 @@ footer{
     margin: 20px;
     border-radius: 15px;
 }
-
-
-
-
 
 /*ESTILOS PARA LA SECTION EMBALSES Y SUS PROPOSITOS*/
 .container-image{
