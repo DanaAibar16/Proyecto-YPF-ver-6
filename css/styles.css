@@ -1,0 +1,564 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Reseteamos valores predefinidos del css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-image: linear-gradient(
+        rgba(23, 23, 23, 0.7),
+        rgba(23, 23, 23, 0.7)),
+        url(img/mendoza.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #1062a4;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 15px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+} 
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #1f6cab ;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #0d426d ;
+}
+
+.mendoza {
+    padding: 100px 0;
+    background-color: #E1E2E6;
+    position: relative;
+}
+
+.mendoza-content {
+    text-align: center;
+}
+
+.mendoza-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p{
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.nosotras-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.nosotras-1 {
+    padding: 0 9px;
+}
+
+.nosotras-1 img{
+    width: 200px;
+}
+
+.mendoza-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nosotras-1 h3{
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.informacion{
+     background-image: linear-gradient(
+    rgba(23, 23, 23, 0.7),
+    rgba(23, 23, 23, 0.7)),
+    url(img/paisaje2.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+padding: 100px 0;
+}
+
+.informacion-content{
+    text-align: center;
+}
+.informacion-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.informacion-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+.proyectos-group{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 50px;
+}
+.proyectos-1{
+    padding: 0 100px;
+ }
+ .proyectos-1 img{
+    width: 50px;
+    margin-bottom: 15px;
+ }
+ .proyectos-1 h3{
+    color: #eaccb3;
+    font-size: 18px;
+ }
+
+ .general{
+    display: flex;
+}
+.general-1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #E1E2E6;
+}
+
+.general-2{
+    background-image: url(img/paisaje4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3{
+    background-image: url(img/paisaje3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+footer{
+    height: max-content;
+    width: 100%;
+}
+
+/*ESTILOS PARA EL FOOTER*/
+.footer{
+    position: relative;
+    width: 100%;
+    background:#1f6cab;
+    min-height: max-content;
+    padding: 20px 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.icon-elem{
+    list-style: none;
+}
+
+.icon{
+    color: #c7dced;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.incon:hover{
+    transform: translateY(-10px);
+}
+
+.menu{
+    display: flex; /*movemos los elementos de la lista en una fila*/
+    justify-content: center; /*centramos los elementos*/
+    position: relative;
+    align-items: center; /*centramos los elementos*/
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.menu-elem{
+    list-style: none; /*le quitamos los puntos a la lista*/
+}
+.menu-icon{ /*Editamos la lista del footer Inicio Equipo..*/
+    color: #c7dced;;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+.text{
+    color: #c7dced;;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+/*Movimiento para los iconos del footer*/
+.icon:hover{
+  transform: translateY(-10px);  /*movimiento de los iconos hacia arriba*/
+}
+
+.menu-icon:hover{
+    opacity: 1;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+
+        }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }   
+    .menu-icono{
+            width: 15px;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }   
+    #menu:checked ~ .navbar{
+        display: initial;
+    }   
+
+    .header{
+        min-height: 0vh;
+    } 
+    .header-content{
+        padding: 100px 30px;
+    }     
+    .header-content p{
+        padding: 0;
+    }   
+    .mendoza {
+    padding: 30px;
+    }
+    .mendoza-content h2 {
+        padding: 0;
+    }
+    .txt-p {
+        padding: 0;
+    }
+
+    .nosotras-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .mendoza-img{
+        display: none;
+    }
+
+    .informacion{
+        padding: 30px;
+    }
+
+    .informacion-content p {
+        padding: 0;
+    }
+
+    .proyectos-group{
+        flex-direction: column;
+    }
+
+    .proyectos-1{
+        margin-bottom: 25px;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .general-2, .general-3  {
+        display: none;
+    }
+
+}
+
+/*NUEVOS ESTILOS PARA PAGINA CORRESPONDIENTE A LOS EMBALSES (DANA)*/
+/*1.SECTION SER-EMBALSES*/
+/*ESTILO IMAGEN CIRCULAR - DANA*/
+.img-dana img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+#ser-embalses{
+    background-color: rgb(206, 209, 212);
+    color: rgb(2, 2, 2);
+    text-align: center;
+}
+
+#ser-embalses .img-container{
+    padding: 150px 12px;
+}
+
+#ser-embalses p{
+    color: black;
+}
+
+#ser-embalses h2{
+    margin: 0;
+    font-size:3.2em;
+}
+
+.color-emb{
+    color: blueviolet;
+}
+
+/*2.ESTILOS SECTION NUESTROS EMBALSES*/
+#nuestros-embalses{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-embalses .container{
+   padding: 150px 12px;
+}
+
+#nuestros-embalses p{
+    display: none;
+}
+
+#nuestros-embalses h2{
+    margin-top: 0;
+    font-size:3em;
+    color: #62baca;
+}
+
+/*7.Empezamos con el diseño de nuestras CARTAS*/
+.carta-embalse :first-child{ /*seleccionamos la primera carta*/
+    background-image:linear-gradient(
+        0deg,
+       rgba(0,0,0,0.5),
+       rgba(0,0,0,0.5)
+       ) 
+    ,
+    url("https://elaguaev.wordpress.com/wp-content/uploads/2012/11/embalse-potrerillos-5.jpg");
+}
+
+.carta-embalse:nth-child(2){ /*seleccionamos la segunda carta*/
+    background-image:linear-gradient(
+        0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+      ) 
+    ,url("https://tse3.mm.bing.net/th/id/OIP.UfriuM92quUIMCZvCk9A8wAAAA?rs=1&pid=ImgDetMain");
+}
+
+.carta-embalse:nth-child(3){ /*seleccionamos la tercera carta*/
+    background-image:linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),
+         rgba(0,0,0,0.5)
+          ) 
+    ,url("https://tse4.mm.bing.net/th/id/OIP.EUGotyFu5lLSxtvyWg2VwgHaE6?rs=1&pid=ImgDetMain");
+}
+
+.carta-embalse{
+    background: red;
+}
+#nuestros-embalses .carta-embalse{
+    background-position: center, center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+
+
+
+/*ESTILOS PARA LA SECTION EMBALSES Y SUS PROPOSITOS*/
+.container-image{
+    width: 100%;
+    display: flex;
+    max-width: 1110px;
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height:  1.5;
+    color: #1f6cab;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #323337;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: #1f6cab;
+    color: white;
+}
+
